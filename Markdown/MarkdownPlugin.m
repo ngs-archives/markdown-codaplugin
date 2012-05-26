@@ -48,7 +48,7 @@ NSString *const kInitialHTMLTemplate = @"<html>\
 
 #pragma mark - CodaPlugin Methods
 
-- (NSString *)name { return @"Markdown Wiki"; }
+- (NSString *)name { return @"Markdown"; }
 
 - (id)initWithPlugInController:(CodaPlugInsController*)aController
                   plugInBundle:(NSObject <CodaPlugInBundle> *)plugInBundle {
