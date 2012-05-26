@@ -1,0 +1,15 @@
+# Markdown Wiki Plug-In for [Coda 2][appstore]
+
+## How does it work
+
+![screen][screen]
+
+This plug-in allows you to preview and generate HTML from [Markdown][markdown] wiki documents.
+
+## Intalling
+[Download][download], Unzip and Double click, that's all.
+
+[appstore]: http://bit.ly/coda2appstore
+[screen]:   http://ngs.github.com/markdown-codaplugin/images/screen.png
+[download]: https://github.com/downloads/ngs/markdown-codaplugin/Markdown.codaplugin-1.0.0.zip
+[markdown]: http://daringfireball.net/projects/markdown/
