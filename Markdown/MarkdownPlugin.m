@@ -177,41 +177,33 @@ NSString *const kInitialHTMLTemplate = @"<html>\
 }
 
 //
-// Borrowed from http://bit.ly/KU98wv 
+// Borrowed from https://gist.github.com/1291718
 //
 
 - (NSString *)html {
   CodaTextView *tv = [self.pluginController focusedTextView:self];
   NSString *source = tv.string;
   if(!source||source.length==0) return @"";
-  const char * prose = [source UTF8String];  
-  struct buf *ib, *ob;       
-  
-  int length = source.length + 1;
-  
-  ib = bufnew(length);
-  bufgrow(ib, length);
-  memcpy(ib->data, prose, length);
-  ib->size = length;
-  
-  ob = bufnew(64);
   
   struct sd_callbacks callbacks;
   struct html_renderopt options;
-  struct sd_markdown *markdown;
+  const char *rawMarkdown = [source cStringUsingEncoding:NSUTF8StringEncoding];
+  struct buf *inputBuffer = bufnew(strlen(rawMarkdown));
+  bufputs(inputBuffer, rawMarkdown);
   
-  
+  // Parse the markdown into a new buffer using Sundown.
+  struct buf *outputBuffer = bufnew(64);
   sdhtml_renderer(&callbacks, &options, 0);
-  markdown = sd_markdown_new(0, 16, &callbacks, &options);
-  
-  sd_markdown_render(ob, ib->data, ib->size, markdown);
+  struct sd_markdown *markdown = sd_markdown_new(0, 16, &callbacks, &options);
+  sd_markdown_render(outputBuffer, inputBuffer->data, inputBuffer->size, markdown);
   sd_markdown_free(markdown);
   
+  NSString *parsedContent = [NSString stringWithCString:bufcstr(outputBuffer) encoding:NSUTF8StringEncoding];
   
-  NSString *shinyNewHTML = [NSString stringWithUTF8String: (const char*)ob->data];
-  bufrelease(ib);
-  bufrelease(ob);
-  return shinyNewHTML;
+  bufrelease(inputBuffer);
+  bufrelease(outputBuffer);
+  
+  return parsedContent;
 }
 
 - (void)reloadStylesheet {
