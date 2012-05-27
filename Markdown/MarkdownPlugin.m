@@ -24,6 +24,7 @@
 @property (strong) CodaPlugInsController *pluginController;
 @property (readonly) PreviewWindowController *previewWindowController;
 @property (strong) NSURL *stylesheetURL;
+@property (strong) NSString *cachedHTML;
 
 @end
 
@@ -44,6 +45,7 @@ NSString *const kInitialHTMLTemplate = @"<html>\
 , previewWindowController = _previewWindowController
 , stylesheetURL = _stylesheetURL
 , bundleURL = _bundleURL
+, cachedHTML = _cachedHTML
 ;
 
 #pragma mark - CodaPlugin Methods
@@ -194,7 +196,8 @@ NSString *const kInitialHTMLTemplate = @"<html>\
   // Parse the markdown into a new buffer using Sundown.
   struct buf *outputBuffer = bufnew(64);
   sdhtml_renderer(&callbacks, &options, 0);
-  struct sd_markdown *markdown = sd_markdown_new(0, 16, &callbacks, &options);
+  unsigned int extensions = MKDEXT_NO_INTRA_EMPHASIS|MKDEXT_TABLES|MKDEXT_FENCED_CODE|MKDEXT_AUTOLINK|MKDEXT_STRIKETHROUGH|MKDEXT_SPACE_HEADERS|MKDEXT_SUPERSCRIPT|MKDEXT_LAX_SPACING;
+  struct sd_markdown *markdown = sd_markdown_new(extensions, 16, &callbacks, &options);
   sd_markdown_render(outputBuffer, inputBuffer->data, inputBuffer->size, markdown);
   sd_markdown_free(markdown);
   
@@ -220,23 +223,24 @@ NSString *const kInitialHTMLTemplate = @"<html>\
   NSError *error = nil;
   WebFrame *frame = self.previewWindowController.webView.mainFrame;
   WebScriptObject *win = [frame windowObject];
-  NSString *innerHTML = [win evaluateWebScript:@"document.body.innerHTML"];
-  if(!innerHTML||innerHTML.length==0) {
+  NSString *innerHTML = [win evaluateWebScript:[NSString stringWithFormat:@"document.body.innerHTML;"]];
+  if(!innerHTML||[innerHTML isEqualToString:@""]) {
+    NSString *contentHTML = [NSString stringWithFormat:kInitialHTMLTemplate,
+                             self.stylesheetURL.absoluteString, html];
     [self.previewWindowController.webView.mainFrame
-     loadHTMLString:[NSString stringWithFormat:kInitialHTMLTemplate,
-                     self.stylesheetURL.absoluteString, html]
+     loadHTMLString:contentHTML
      baseURL:self.bundleURL];
-    return;
+  } else if(![html isEqualToString:self.cachedHTML]) {
+    NSString * jsHTML =
+    html ?
+    [[NSString alloc] initWithData:
+     [NSJSONSerialization dataWithJSONObject:html
+                                     options:NSJSONReadingAllowFragments
+                                       error:&error] encoding:NSUTF8StringEncoding] : @"";
+    if(error) NSLog(@"%@", error);
+    [win evaluateWebScript:[NSString stringWithFormat:@"document.body.innerHTML=%@",jsHTML]];
   }
-  NSString * jsHTML =
-  html ?
-  [[NSString alloc] initWithData:
-   [NSJSONSerialization dataWithJSONObject:html
-                                   options:NSJSONReadingAllowFragments
-                                     error:&error] encoding:NSUTF8StringEncoding] : @"";
-  if(error) NSLog(@"%@", error);
-  [win
-   evaluateWebScript:[NSString stringWithFormat:@"document.body.innerHTML=%@",jsHTML]];
+  self.cachedHTML = html;
 }
 
 @end
