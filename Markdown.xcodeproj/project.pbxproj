@@ -23,6 +23,7 @@
 		852FDCCE157035F700719570 /* Default.css in Resources */ = {isa = PBXBuildFile; fileRef = 852FDCCD157035F700719570 /* Default.css */; };
 		85AF87F0156FED4F00B20241 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF87EF156FED4F00B20241 /* Cocoa.framework */; };
 		85AF884C156FEED800B20241 /* MarkdownPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AF884B156FEED800B20241 /* MarkdownPlugin.m */; };
+		85D467471572C6CF00D434BD /* WikiPreviewWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85010C1F1572C237004E0579 /* WikiPreviewWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +59,7 @@
 		85010C211572C237004E0579 /* WikiPreviewWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiPreviewWindowController.m; sourceTree = "<group>"; };
 		852FDCC4157018EE00719570 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		852FDCCD157035F700719570 /* Default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Default.css; sourceTree = "<group>"; };
-		85AF87EC156FED4F00B20241 /* .bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		85AF87EC156FED4F00B20241 /* Markdown.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Markdown.codaplugin; path = Markdown.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AF87EF156FED4F00B20241 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		85AF87F4156FED4F00B20241 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85AF87F7156FED4F00B20241 /* Markdown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Markdown-Info.plist"; sourceTree = "<group>"; };
@@ -169,7 +170,7 @@
 		85AF87ED156FED4F00B20241 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85AF87EC156FED4F00B20241 /* .bundle */,
+				85AF87EC156FED4F00B20241 /* Markdown.codaplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,7 +232,7 @@
 			);
 			name = Markdown;
 			productName = Markdown;
-			productReference = 85AF87EC156FED4F00B20241 /* .bundle */;
+			productReference = 85AF87EC156FED4F00B20241 /* Markdown.codaplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -265,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D467471572C6CF00D434BD /* WikiPreviewWindow.xib in Resources */,
 				852FDCCE157035F700719570 /* Default.css in Resources */,
 				85010C2A1572C237004E0579 /* README.mkdn in Resources */,
 			);
