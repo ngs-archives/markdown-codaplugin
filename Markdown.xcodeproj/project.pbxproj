@@ -15,11 +15,10 @@
 		85010AA715709F11004E0579 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 85010A9B15709F11004E0579 /* buffer.c */; };
 		85010AA815709F11004E0579 /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 85010A9E15709F11004E0579 /* markdown.c */; };
 		85010AA915709F11004E0579 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 85010AA015709F11004E0579 /* stack.c */; };
-		85010BA91572B611004E0579 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85010B981572B611004E0579 /* InfoPlist.strings */; };
-		85010BAB1572B611004E0579 /* WikiPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85010B9E1572B611004E0579 /* WikiPlugin.m */; };
-		85010BAC1572B611004E0579 /* WikiPreviewWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85010B9F1572B611004E0579 /* WikiPreviewWindow.xib */; };
-		85010BAD1572B611004E0579 /* WikiPreviewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85010BA11572B611004E0579 /* WikiPreviewWindowController.m */; };
 		85010BB11572B6DE004E0579 /* NSString+Sundown.m in Sources */ = {isa = PBXBuildFile; fileRef = 85010BB01572B6DD004E0579 /* NSString+Sundown.m */; };
+		85010C2A1572C237004E0579 /* README.mkdn in Resources */ = {isa = PBXBuildFile; fileRef = 85010C1A1572C237004E0579 /* README.mkdn */; };
+		85010C2B1572C237004E0579 /* WikiPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85010C1E1572C237004E0579 /* WikiPlugin.m */; };
+		85010C2D1572C237004E0579 /* WikiPreviewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85010C211572C237004E0579 /* WikiPreviewWindowController.m */; };
 		852FDCC5157018EE00719570 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852FDCC4157018EE00719570 /* WebKit.framework */; };
 		852FDCCE157035F700719570 /* Default.css in Resources */ = {isa = PBXBuildFile; fileRef = 852FDCCD157035F700719570 /* Default.css */; };
 		85AF87F0156FED4F00B20241 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AF87EF156FED4F00B20241 /* Cocoa.framework */; };
@@ -42,24 +41,24 @@
 		85010A9F15709F11004E0579 /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
 		85010AA015709F11004E0579 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
 		85010AA115709F11004E0579 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
-		85010B921572B611004E0579 /* Bundle-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Bundle-Debug.xcconfig"; sourceTree = "<group>"; };
-		85010B931572B611004E0579 /* Bundle-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Bundle-Release.xcconfig"; sourceTree = "<group>"; };
-		85010B941572B611004E0579 /* Bundle.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Bundle.xcconfig; sourceTree = "<group>"; };
-		85010B951572B611004E0579 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
-		85010B961572B611004E0579 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
-		85010B971572B611004E0579 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
-		85010B991572B611004E0579 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		85010B9C1572B611004E0579 /* CodaPlugInsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
-		85010B9D1572B611004E0579 /* WikiPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiPlugin.h; sourceTree = "<group>"; };
-		85010B9E1572B611004E0579 /* WikiPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiPlugin.m; sourceTree = "<group>"; };
-		85010B9F1572B611004E0579 /* WikiPreviewWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiPreviewWindow.xib; sourceTree = "<group>"; };
-		85010BA01572B611004E0579 /* WikiPreviewWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiPreviewWindowController.h; sourceTree = "<group>"; };
-		85010BA11572B611004E0579 /* WikiPreviewWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiPreviewWindowController.m; sourceTree = "<group>"; };
 		85010BAF1572B6DD004E0579 /* NSString+Sundown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sundown.h"; sourceTree = "<group>"; };
 		85010BB01572B6DD004E0579 /* NSString+Sundown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sundown.m"; sourceTree = "<group>"; };
+		85010C121572C237004E0579 /* Bundle-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Bundle-Debug.xcconfig"; sourceTree = "<group>"; };
+		85010C131572C237004E0579 /* Bundle-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Bundle-Release.xcconfig"; sourceTree = "<group>"; };
+		85010C141572C237004E0579 /* Bundle.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Bundle.xcconfig; sourceTree = "<group>"; };
+		85010C151572C237004E0579 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		85010C161572C237004E0579 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		85010C171572C237004E0579 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		85010C1A1572C237004E0579 /* README.mkdn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.mkdn; sourceTree = "<group>"; };
+		85010C1C1572C237004E0579 /* CodaPlugInsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
+		85010C1D1572C237004E0579 /* WikiPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiPlugin.h; sourceTree = "<group>"; };
+		85010C1E1572C237004E0579 /* WikiPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiPlugin.m; sourceTree = "<group>"; };
+		85010C1F1572C237004E0579 /* WikiPreviewWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiPreviewWindow.xib; sourceTree = "<group>"; };
+		85010C201572C237004E0579 /* WikiPreviewWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiPreviewWindowController.h; sourceTree = "<group>"; };
+		85010C211572C237004E0579 /* WikiPreviewWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiPreviewWindowController.m; sourceTree = "<group>"; };
 		852FDCC4157018EE00719570 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		852FDCCD157035F700719570 /* Default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Default.css; sourceTree = "<group>"; };
-		85AF87EC156FED4F00B20241 /* Markdown.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Markdown.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		85AF87EC156FED4F00B20241 /* .bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AF87EF156FED4F00B20241 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		85AF87F4156FED4F00B20241 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85AF87F7156FED4F00B20241 /* Markdown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Markdown-Info.plist"; sourceTree = "<group>"; };
@@ -121,38 +120,38 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		85010B8F1572B610004E0579 /* Shared */ = {
+		85010C0F1572C237004E0579 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				85010B911572B611004E0579 /* Configurations */,
-				85010B981572B611004E0579 /* InfoPlist.strings */,
-				85010B9B1572B611004E0579 /* Sources */,
+				85010C111572C237004E0579 /* Configurations */,
+				85010C1A1572C237004E0579 /* README.mkdn */,
+				85010C1B1572C237004E0579 /* Sources */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		85010B911572B611004E0579 /* Configurations */ = {
+		85010C111572C237004E0579 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				85010B921572B611004E0579 /* Bundle-Debug.xcconfig */,
-				85010B931572B611004E0579 /* Bundle-Release.xcconfig */,
-				85010B941572B611004E0579 /* Bundle.xcconfig */,
-				85010B951572B611004E0579 /* Project-Debug.xcconfig */,
-				85010B961572B611004E0579 /* Project-Release.xcconfig */,
-				85010B971572B611004E0579 /* Project.xcconfig */,
+				85010C121572C237004E0579 /* Bundle-Debug.xcconfig */,
+				85010C131572C237004E0579 /* Bundle-Release.xcconfig */,
+				85010C141572C237004E0579 /* Bundle.xcconfig */,
+				85010C151572C237004E0579 /* Project-Debug.xcconfig */,
+				85010C161572C237004E0579 /* Project-Release.xcconfig */,
+				85010C171572C237004E0579 /* Project.xcconfig */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
 		};
-		85010B9B1572B611004E0579 /* Sources */ = {
+		85010C1B1572C237004E0579 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				85010B9C1572B611004E0579 /* CodaPlugInsController.h */,
-				85010B9D1572B611004E0579 /* WikiPlugin.h */,
-				85010B9E1572B611004E0579 /* WikiPlugin.m */,
-				85010B9F1572B611004E0579 /* WikiPreviewWindow.xib */,
-				85010BA01572B611004E0579 /* WikiPreviewWindowController.h */,
-				85010BA11572B611004E0579 /* WikiPreviewWindowController.m */,
+				85010C1C1572C237004E0579 /* CodaPlugInsController.h */,
+				85010C1D1572C237004E0579 /* WikiPlugin.h */,
+				85010C1E1572C237004E0579 /* WikiPlugin.m */,
+				85010C1F1572C237004E0579 /* WikiPreviewWindow.xib */,
+				85010C201572C237004E0579 /* WikiPreviewWindowController.h */,
+				85010C211572C237004E0579 /* WikiPreviewWindowController.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -160,7 +159,7 @@
 		85AF87E1156FED4E00B20241 = {
 			isa = PBXGroup;
 			children = (
-				85010B8F1572B610004E0579 /* Shared */,
+				85010C0F1572C237004E0579 /* Shared */,
 				85AF87F5156FED4F00B20241 /* Markdown */,
 				85AF87EE156FED4F00B20241 /* Frameworks */,
 				85AF87ED156FED4F00B20241 /* Products */,
@@ -170,7 +169,7 @@
 		85AF87ED156FED4F00B20241 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85AF87EC156FED4F00B20241 /* Markdown.codaplugin */,
+				85AF87EC156FED4F00B20241 /* .bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,7 +231,7 @@
 			);
 			name = Markdown;
 			productName = Markdown;
-			productReference = 85AF87EC156FED4F00B20241 /* Markdown.codaplugin */;
+			productReference = 85AF87EC156FED4F00B20241 /* .bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -267,8 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				852FDCCE157035F700719570 /* Default.css in Resources */,
-				85010BA91572B611004E0579 /* InfoPlist.strings in Resources */,
-				85010BAC1572B611004E0579 /* WikiPreviewWindow.xib in Resources */,
+				85010C2A1572C237004E0579 /* README.mkdn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,50 +302,39 @@
 				85010AA715709F11004E0579 /* buffer.c in Sources */,
 				85010AA815709F11004E0579 /* markdown.c in Sources */,
 				85010AA915709F11004E0579 /* stack.c in Sources */,
-				85010BAB1572B611004E0579 /* WikiPlugin.m in Sources */,
-				85010BAD1572B611004E0579 /* WikiPreviewWindowController.m in Sources */,
 				85010BB11572B6DE004E0579 /* NSString+Sundown.m in Sources */,
+				85010C2B1572C237004E0579 /* WikiPlugin.m in Sources */,
+				85010C2D1572C237004E0579 /* WikiPreviewWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		85010B981572B611004E0579 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85010B991572B611004E0579 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		85AF87FC156FED4F00B20241 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85010B951572B611004E0579 /* Project-Debug.xcconfig */;
+			baseConfigurationReference = 85010C151572C237004E0579 /* Project-Debug.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		85AF87FD156FED4F00B20241 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85010B961572B611004E0579 /* Project-Release.xcconfig */;
+			baseConfigurationReference = 85010C161572C237004E0579 /* Project-Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
 		};
 		85AF87FF156FED4F00B20241 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85010B921572B611004E0579 /* Bundle-Debug.xcconfig */;
+			baseConfigurationReference = 85010C121572C237004E0579 /* Bundle-Debug.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		85AF8800156FED4F00B20241 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85010B931572B611004E0579 /* Bundle-Release.xcconfig */;
+			baseConfigurationReference = 85010C131572C237004E0579 /* Bundle-Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
