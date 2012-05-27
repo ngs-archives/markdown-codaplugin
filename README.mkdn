@@ -11,5 +11,5 @@ This plug-in allows you to preview and generate HTML from [Markdown][markdown] w
 
 [appstore]: http://bit.ly/coda2appstore
 [screen]:   http://ngs.github.com/markdown-codaplugin/images/screen.png
-[download]: https://github.com/downloads/ngs/markdown-codaplugin/Markdown.codaplugin-1.0.1.zip
+[download]: https://github.com/ngs/markdown-codaplugin/downloads
 [markdown]: http://daringfireball.net/projects/markdown/
