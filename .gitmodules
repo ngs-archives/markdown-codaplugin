@@ -1,0 +1,3 @@
+[submodule "Shared"]
+	path = Shared
+	url = git@github.com:ngs/coda-wikiplugins-shared.git
