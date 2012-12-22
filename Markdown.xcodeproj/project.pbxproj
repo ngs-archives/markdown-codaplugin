@@ -59,7 +59,7 @@
 		85010C211572C237004E0579 /* WikiPreviewWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiPreviewWindowController.m; sourceTree = "<group>"; };
 		852FDCC4157018EE00719570 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		852FDCCD157035F700719570 /* Default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Default.css; sourceTree = "<group>"; };
-		85AF87EC156FED4F00B20241 /* Markdown.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Markdown.codaplugin; path = Markdown.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		85AF87EC156FED4F00B20241 /* Markdown.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Markdown.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AF87EF156FED4F00B20241 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		85AF87F4156FED4F00B20241 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85AF87F7156FED4F00B20241 /* Markdown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Markdown-Info.plist"; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 		85AF87E3156FED4E00B20241 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "LittleApps Inc.";
 			};
 			buildConfigurationList = 85AF87E6156FED4E00B20241 /* Build configuration list for PBXProject "Markdown" */;
@@ -331,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 85010C121572C237004E0579 /* Bundle-Debug.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = Debug;
 		};
@@ -338,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 85010C131572C237004E0579 /* Bundle-Release.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = Release;
 		};
